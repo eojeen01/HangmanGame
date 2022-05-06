@@ -2,6 +2,7 @@
 
 # I.	전체 소스코드
 ### i.	CountPanel 클래스
+```
 package hangman;
 
 import java.awt.*;
@@ -22,7 +23,9 @@ private int count;
 		return count;
 	}
 }
+```
 ### ii.	DrawPanel 클래스
+```
 package hangman;
 
 import java.awt.*;
@@ -81,8 +84,9 @@ public void paintComponent(Graphics g) {
 	
 }
 }
-
+```
 ### iii.	HangMan 클래스
+```
 package hangman;
 
 import java.awt.*;
@@ -209,8 +213,9 @@ class Hangman extends JFrame implements ActionListener{
 	
 }
 
-
+```
 ### iv.	MissPanel 클래스
+```
 package hangman;
 
 import java.awt.*;
@@ -267,8 +272,9 @@ class MissPanel extends JPanel{
 	
 	
 }
-
+```
 ### v.	Music 클래스
+```
 package hangman;
 
 import java.io.BufferedInputStream;
@@ -316,8 +322,9 @@ public class Music extends Thread{
 		}
 	}
 }
-
+```
 ### vi.	WordPanel 클래스
+```
 package hangman;
 
 import java.awt.*;
@@ -376,8 +383,10 @@ class WordPanel extends JPanel{
 		return true;
 	}
 }
+```
 
 ### vii.	Words 클래스
+```
 package hangman;
 
 import java.util.Random;
@@ -449,6 +458,7 @@ static String[] examples = {"They had been primed with good advice.\n그들은 �
 		
 };
 }
+```
 # II.	객체지향 개선
 ### i.	기존 프로그램에 비해 개선된 부분
 단어를 맞추는데 걸리는 시간을 측정하고, 걸린 시간에 따라 등급을 A+, A, B, C로 나누어 출력한다. 철자를 모두 맞추거나, 틀려서 게임이 끝났을 경우 단어의 뜻과 예문을 보여주어서 교육적인 프로그램으로 개선시켰다. 사용자가 프로그램을 실행하며 지루함을 느끼지 않도록 배경음악을 재생시켰으며, 단어를 맞췄을 때와 틀렸을 때 효과음을 재생할 수 있게 했다.
